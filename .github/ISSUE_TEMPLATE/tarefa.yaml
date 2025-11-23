@@ -1,6 +1,5 @@
 name: Tarefa
 description: Atividade ou processo a ser feito
-title: "[TAREFA] "
 labels: ["tarefa"]
 assignees: []
 body:
