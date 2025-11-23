@@ -4,44 +4,13 @@ title: "[TAREFA] "
 labels: ["tarefa"]
 assignees: []
 body:
-  - type: dropdown
-    id: prioridade
-    attributes:
-      label: Prioridade
-      description: Selecione o nível de urgência
-      options:
-        - "🔴 Alta (Bloqueia trabalho/urgente)"
-        - "🟡 Média (Importante mas não bloqueante)"
-        - "🟢 Baixa (Backlog/não crítica)"
-    validations:
-      required: true
-
   - type: textarea
     id: descricao
     attributes:
       label: Descrição da tarefa
-      description: Detalhe o que precisa ser feito
+      description: Detalhe o que precisa ser feito + critérios
     validations:
       required: true
-
-  - type: textarea
-    id: criterios
-    attributes:
-      label: Critérios de aceitação
-      description: Liste as condições para considerar a tarefa concluída
-      placeholder: |
-        - [ ] Critério 1
-        - [ ] Critério 2
-    validations:
-      required: true
-
-  - type: textarea
-    id: contexto
-    attributes:
-      label: Contexto adicional
-      description: Adicione explicações extras, prints, trechos de código etc
-    validations:
-      required: false
 
   - type: textarea
     id: dependencias
