@@ -21,3 +21,17 @@ body:
         - Bloqueia #456
     validations:
       required: false
+
+  - type: dropdown
+    id: equipe
+    attributes:
+      label: Equipe
+      description: Selecione a equipe responsável por esta tarefa
+      options:
+        - Bibs
+        - Olga
+        - Ias
+        - Math
+        - Vini
+    validations:
+      required: true
