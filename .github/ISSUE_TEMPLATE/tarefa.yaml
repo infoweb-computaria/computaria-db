@@ -1,0 +1,37 @@
+name: Tarefa
+description: Atividade ou processo a ser feito
+labels: ["tarefa"]
+assignees: []
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição da tarefa
+      description: Detalhe o que precisa ser feito + critérios
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependências
+      description: "Relacione com outros issues (ex: Relacionado a #123 ou Bloqueia #456)"
+      placeholder: |
+        - Relacionado a #123
+        - Bloqueia #456
+    validations:
+      required: false
+
+  - type: dropdown
+    id: equipe
+    attributes:
+      label: Equipe
+      description: Selecione a equipe responsável por esta tarefa
+      options:
+        - Bibs
+        - Olga
+        - Ias
+        - Math
+        - Vini
+    validations:
+      required: true
